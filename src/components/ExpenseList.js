@@ -2,14 +2,14 @@ import React from 'react'
 
 const ExpenseList = () => {
     return (
-        <div className="transactions transactions-income">
+        <div className="transactions transactions-expense">
             <h2>Transation History</h2>
             <ul className="transaction-list">
                 <li className="transaction">
-                    <span className="transaction-text"> Salary</span>
-                    <span className="transaction-amount"> $5.000,00</span>
+                    <span className="transaction-text"> Rent</span>
+                    <span className="transaction-amount"> $500,00</span>
                     <button className="delete-btn">
-                        <i className="fas faa-trash"></i>
+                        <i className="fas fa-trash"></i>
                     </button>
                 </li>
             </ul>

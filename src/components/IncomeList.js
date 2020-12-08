@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const IncomeList = () => {
     return (
         <div className="transactions transactions-income">
@@ -9,7 +10,7 @@ const IncomeList = () => {
                     <span className="transaction-text"> Salary</span>
                     <span className="transaction-amount"> $5.000,00</span>
                     <button className="delete-btn">
-                        <i className="fas faa-trash"></i>
+                        <i className="fas fa-trash"></i>
                     </button>
                 </li>
             </ul>

@@ -1,22 +1,25 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header';
-import Balance from './components/Balance';
-import AddTransaction from './components/AddTransaction';
-import IncomeList from './components/IncomeList';
-import ExpenseList from './components/ExpenseList'
+import React from "react";
+import "./App.css";
+import { GlobalContextProvider } from "./context/GlobalState";
+import Header from "./components/Header";
+import Balance from "./components/Balance";
+import AddTransaction from "./components/AddTransaction";
+import IncomeList from "./components/IncomeList";
+import ExpenseList from "./components/ExpenseList";
 const App = () => {
   return (
-    <div className="container">
+    <GlobalContextProvider>
+      <div className="container">
         <div className="app-wrapper">
-          <Header/>
-          <Balance/>
-          <AddTransaction/>
-          <IncomeList/>
-          <ExpenseList/>
+          <Header />
+          <Balance />
+          <AddTransaction />
+          <IncomeList />
+          <ExpenseList />
         </div>
-    </div>
+      </div>
+    </GlobalContextProvider>
   );
-}
+};
 
 export default App;
