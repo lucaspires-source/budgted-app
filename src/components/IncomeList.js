@@ -8,7 +8,7 @@ const IncomeList = () => {
       <h2>Transation History</h2>
       <ul className="transaction-list">
         {incomeTransactions.map((incomeTransactions) => (
-            <IncomeTransaction incomeTransactions={incomeTransactions}/>
+            <IncomeTransaction key={incomeTransactions.id} incomeTransactions={incomeTransactions}/>
         ))}
       </ul>
     </div>
